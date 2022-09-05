@@ -1,6 +1,6 @@
 package mn.mo.backbone.service;
 
-import lombok.extern.slf4j.Slf4j;
+
 import mn.mo.backbone.domain.ErrorResponse;
 import mn.mo.backbone.domain.Role;
 import mn.mo.backbone.domain.User;
@@ -18,6 +18,8 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
+
+import lombok.extern.slf4j.Slf4j;
 
 import javax.transaction.Transactional;
 import javax.validation.ConstraintViolation;
