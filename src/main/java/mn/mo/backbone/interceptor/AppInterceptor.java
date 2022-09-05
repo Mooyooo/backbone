@@ -23,8 +23,8 @@ public class AppInterceptor implements HandlerInterceptor {
     @Override
     public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, @Nullable ModelAndView modelAndView) throws Exception {
         log.info("========================Request Begin=============================");
-        log.info("URL : {}", request.getRequestURL());
-        log.info("URI : {}", request.getRequestURI());
+        log.info("tokenURL : {}", request.getRequestURL());
+        log.info("tokenURI : {}", request.getRequestURI());
         log.info("Header : {}", request.getHeaderNames());
         log.info("Method : {}", request.getMethod());
         log.info("Query String : {}", request.getQueryString());
